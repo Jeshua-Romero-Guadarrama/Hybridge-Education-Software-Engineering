@@ -6,7 +6,7 @@ Este repositorio contiene una calculadora básica en Python que permite realizar
 
 1. **Clonar el repositorio**:
 
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/Jeshua-Romero-Guadarrama/Hybridge-Education-Software-Engineering/tree/main/Programacion-Avanzada/Calculadora-Open-Source>
 
 2. **Navegar al directorio del proyecto**:
 
