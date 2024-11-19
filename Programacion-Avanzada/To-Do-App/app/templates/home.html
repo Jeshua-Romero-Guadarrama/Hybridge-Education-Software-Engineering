@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi To Do App</title>
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: none;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1, h3 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .form-add, .form-edit {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            display: block;
+            width: calc(100% - 12px);
+            border-radius: 20px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi To Do App</h1>
+        
+        <div class="form-add">
+            <h3>Agregar Tarea</h3>
+            <form action="/add" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre de la tarea" required>
+                <input type="text" name="descripcion" placeholder="Descripción de la tarea" required>
+                <input type="submit" value="Agregar Tarea">
+            </form>
+        </div>
+        
+        <h3>Pendientes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Acabar Programación Avanzada</td>
+                    <td>Necesito acabar todos los temas</td>
+                    <td class="action-buttons">
+                        <button onclick="location.href='/edit/1'">Editar</button>
+                        <button onclick="location.href='/delete/1'">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>En proceso</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Evaluar a estudiantes</td>
+                    <td>Le están echando ganas</td>
+                    <td class="action-buttons">
+                        <button onclick="location.href='/edit/2'">Editar</button>
+                        <button onclick="location.href='/delete/2'">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Finalizado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desayunar</td>
+                    <td>Si tan solo alguien me invitara a desayunar</td>
+                    <td class="action-buttons">
+                        <button onclick="location.href='/edit/3'">Editar</button>
+                        <button onclick="location.href='/delete/3'">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
