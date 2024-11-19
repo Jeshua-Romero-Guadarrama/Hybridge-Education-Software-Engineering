@@ -6,7 +6,7 @@ Este repositorio contiene el proyecto de Flask donde se puede encontrar el códi
 
 1. **Clonar el repositorio**:
 
-git clone <https://github.com/Jeshua-Romero-Guadarrama/Hybridge-Education-Software-Engineering/tree/main/Programacion-Avanzada/Tu-App>
+git clone <https://github.com/Jeshua-Romero-Guadarrama/Hybridge-Education-Software-Engineering/tree/main/Programacion-Avanzada/To-Do-App>
 
 2. **Activar el entorno virtual**:
 
