@@ -15,7 +15,7 @@ Permite realizar operaciones básicas como suma, resta, multiplicación y divisi
 
 1. **Clonar el repositorio**:
 
-git clone <https://github.com/Jeshua-Romero-Guadarrama/Hybridge-Education-Software-Engineering/tree/main/Programacion-Avanzada/Tu-App>
+git clone <https://github.com/Jeshua-Romero-Guadarrama/Hybridge-Education-Software-Engineering/tree/main/Programacion-Avanzada/Calculadora>
 
 2. **Ejecutar la aplicación**:
 
