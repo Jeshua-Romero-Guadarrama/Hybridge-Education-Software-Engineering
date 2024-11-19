@@ -1,4 +1,4 @@
-# Calculadora en Python
+# Aplicación en Flask
 
 Este repositorio contiene el proyecto de Flask donde se puede encontrar el código necesario y las instrucciones paso a paso para crear una aplicación Flask con una estructura básica (boilerplate).
 
