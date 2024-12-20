@@ -1,0 +1,158 @@
+/* static/css/estilos.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sección del Formulario */
+.form-section, .list-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2, .list-section h2 {
+    margin-bottom: 15px;
+    color: #0277bd;
+}
+
+/* Formulario */
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e88e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
+
+/* Lista de Usuarios */
+.list-section ul {
+    list-style-type: none;
+}
+
+.list-section li {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.list-section li:last-child {
+    border-bottom: none;
+}
+
+.list-section li:hover {
+    background-color: #f1f8ff;
+    transform: translateY(-2px);
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario-info strong {
+    font-size: 1.1em;
+    color: #0277bd;
+}
+
+.usuario-info span {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .form-section, .list-section {
+        flex: 1 1 100%;
+    }
+}
